@@ -17,4 +17,9 @@ public class MyBinarySearchTree
     {
         return root;
     }
+
+    public void insert(int data)
+    {
+
+    }
 }
