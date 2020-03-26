@@ -10,4 +10,11 @@ public class TreeNode {
     private int data;
     private TreeNode left;
     private  TreeNode right;
+
+    private TreeNode(int data)
+    {
+        this.data=data;
+        left=null;
+        right=null;
+    }
 }
