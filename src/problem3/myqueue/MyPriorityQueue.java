@@ -11,9 +11,9 @@ import problem5.student.Student;
 
 public class MyPriorityQueue
 {
-    Node front;
-    Node rear;
-    int size;
+    private Node front;
+    private Node rear;
+    private int size;
 
     public MyPriorityQueue()
     {
@@ -70,4 +70,11 @@ public class MyPriorityQueue
             }
         }
     }
+
+    int getSize()
+    {
+        return size;
+    }
+
+
 }
