@@ -37,5 +37,21 @@ public class MyQueue
         return response;
     }
 
+    public void enqueue(int element)
+    {
+        Node node=new Node(element);
+        size++;
+        if(isEmpty())
+        {
+            front=node;
+            rear=node;
+        }
+        else
+        {
+            node.setNext(rear);
+            rear=node;
+        }
+    }
+
 
 }
