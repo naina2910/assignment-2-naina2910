@@ -51,4 +51,19 @@ public class MyBinarySearchTree
             }
         }
     }
+
+    void preOrderTraverse()
+    {
+        preOrder(root);
+    }
+
+    void preOrder(TreeNode node)
+    {
+        if(node != null)
+        {
+            System.out.println(node.getData());
+            preOrder(node.getLeft());
+            preOrder(node.getRight());
+        }
+    }
 }
