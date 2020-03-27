@@ -66,4 +66,19 @@ public class MyBinarySearchTree
             preOrder(node.getRight());
         }
     }
+
+    void postOrderTraverse()
+    {
+        postOrder(root);
+    }
+
+    void postOrder(TreeNode node)
+    {
+        if(node != null)
+        {
+            postOrder(node.getLeft());
+            postOrder(node.getRight());
+            System.out.println(node.getData());
+        }
+    }
 }
