@@ -27,5 +27,15 @@ public class MyQueue
         return size;
     }
 
+    boolean isEmpty()
+    {
+        boolean response=false;
+        if(front == null)
+        {
+            response=true;
+        }
+        return response;
+    }
+
 
 }
