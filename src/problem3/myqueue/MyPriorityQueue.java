@@ -78,6 +78,12 @@ public class MyPriorityQueue
 
     public void printQueue()
     {
-
+        Node temp=front;
+        while(temp.getNext() != null)
+        {
+            System.out.println(temp.getStudent()+"--->");
+            temp=temp.getNext();
+        }
+        System.out.println(temp.getStudent());
     }
 }
