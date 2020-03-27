@@ -64,5 +64,16 @@ public class MyQueue
         }
     }
 
+    public void printQueue()
+    {
+        Node temp=front;
+        while(temp.getNext() != null)
+        {
+            System.out.print(temp.getData()+"--->");
+            temp=temp.getNext();
+        }
+        System.out.print(temp.getData());
+    }
+
 
 }
