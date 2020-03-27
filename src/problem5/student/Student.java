@@ -19,6 +19,13 @@ public class Student
         this.name = name;
     }
 
+    public Student(int rollNo, String name, int backLogCounter, int appearingCount) {
+        this.rollNo = rollNo;
+        this.name = name;
+        this.backLogCounter = backLogCounter;
+        this.appearingCount = appearingCount;
+    }
+
     public int getRollNo() {
         return rollNo;
     }
