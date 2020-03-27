@@ -7,6 +7,7 @@
 package problem4.myqueue;
 // to create queue to store pre - order successor
 
+import problem1.mybst.MyBinarySearchTree;
 import problem1.node.TreeNode;
 import problem4.node.Node;
 
@@ -49,19 +50,24 @@ public class MyQueue
         }
         else
         {
-            node.setNext(rear);
+            rear.setNext(node);
             rear=node;
         }
     }
 
-    void preorder(TreeNode node)
+    void preOrder(TreeNode node)
     {
         if(node!=null)
         {
             enqueue(node.getData());
-            preorder(node.getLeft());
-            preorder(node.getRight());
+            preOrder(node.getLeft());
+            preOrder(node.getRight());
         }
+    }
+
+    public void addData(MyBinarySearchTree tree)
+    {
+        preOrder(tree.getRoot());
     }
 
     public void printQueue()
