@@ -52,7 +52,7 @@ public class MyBinarySearchTree
         }
     }
 
-    void preOrderTraverse()
+    public void preOrderTraverse()
     {
         preOrder(root);
     }
@@ -61,13 +61,13 @@ public class MyBinarySearchTree
     {
         if(node != null)
         {
-            System.out.println(node.getData());
+            System.out.print(node.getData()+" ");
             preOrder(node.getLeft());
             preOrder(node.getRight());
         }
     }
 
-    void postOrderTraverse()
+    public void postOrderTraverse()
     {
         postOrder(root);
     }
@@ -78,7 +78,7 @@ public class MyBinarySearchTree
         {
             postOrder(node.getLeft());
             postOrder(node.getRight());
-            System.out.println(node.getData());
+            System.out.print(node.getData()+" ");
         }
     }
 }
