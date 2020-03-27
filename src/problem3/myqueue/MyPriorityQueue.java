@@ -31,7 +31,7 @@ public class MyPriorityQueue
         return response;
     }
 
-    void enqueue(Student element)
+    public void enqueue(Student element)
     {
         Node node=new Node(element);
         size++;
@@ -71,7 +71,7 @@ public class MyPriorityQueue
         }
     }
 
-    int getSize()
+    public int getSize()
     {
         return size;
     }
@@ -81,9 +81,9 @@ public class MyPriorityQueue
         Node temp=front;
         while(temp.getNext() != null)
         {
-            System.out.println(temp.getStudent()+"--->");
+            System.out.print(temp.getStudent()+"--->");
             temp=temp.getNext();
         }
-        System.out.println(temp.getStudent());
+        System.out.print(temp.getStudent());
     }
 }
