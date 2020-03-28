@@ -10,7 +10,7 @@ public class Student
 {
     private int rollNo;
     private String name;
-    private int backLogCounter;
+    private int backLog;
     private int appearingCount;
 
     public Student(int rollNo, String name)
@@ -19,10 +19,10 @@ public class Student
         this.name = name;
     }
 
-    public Student(int rollNo, String name, int backLogCounter, int appearingCount) {
+    public Student(int rollNo, String name, int backLog, int appearingCount) {
         this.rollNo = rollNo;
         this.name = name;
-        this.backLogCounter = backLogCounter;
+        this.backLog = backLog;
         this.appearingCount = appearingCount;
     }
 
@@ -42,12 +42,12 @@ public class Student
         this.name = name;
     }
 
-    public int getBackLogCounter() {
-        return backLogCounter;
+    public int getBackLog() {
+        return backLog;
     }
 
-    public void setBackLogCounter(int backLogCounter) {
-        this.backLogCounter = backLogCounter;
+    public void setBackLog(int backLog) {
+        this.backLog = backLog;
     }
 
     public int getAppearingCount() {
