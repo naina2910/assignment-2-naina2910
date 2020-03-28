@@ -12,6 +12,12 @@ import problem1.node.TreeNode;
 public class MyBinarySearchTree
 {
     TreeNode root;
+    int count;
+    public MyBinarySearchTree()
+    {
+        this.root = null;
+        count=0;
+    }
 
     public TreeNode getRoot()
     {
@@ -51,6 +57,8 @@ public class MyBinarySearchTree
             }
         }
     }
+
+
 
     public void preOrderTraverse()
     {
