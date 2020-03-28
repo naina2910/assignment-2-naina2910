@@ -77,6 +77,16 @@ public class MyBinarySearchTree
         }
     }
 
+    public void printLeftNode()
+    {
+        LeftNode(root);
+    }
+
+    public void countNotLeft()
+    {
+        System.out.println(count);
+    }
+
     public void preOrderTraverse()
     {
         preOrder(root);
