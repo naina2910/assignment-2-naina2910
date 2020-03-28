@@ -26,7 +26,7 @@ public class MyCircularQueue
     boolean isEmpty()
     {
         boolean response=false;
-        if(size==0)
+        if(front == null)
         {
             response=true;
         }
@@ -58,7 +58,7 @@ public class MyCircularQueue
         {
             counter--;
             Student s=front.getData();
-            if(s.getBackLog()-s.getAppearingCount() == 0)
+            if(s.getBackLog()-s.getAppearingCount() <= 0 )
             {
                 rear.setNext(front.getNext());
                 front=front.getNext();
