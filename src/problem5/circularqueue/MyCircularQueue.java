@@ -22,4 +22,13 @@ public class MyCircularQueue
         size=0;
     }
 
+    boolean isEmpty()
+    {
+        boolean response=false;
+        if(size==0)
+        {
+            response=true;
+        }
+        return response;
+    }
 }
