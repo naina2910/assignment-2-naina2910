@@ -51,5 +51,8 @@ public class MyCircularQueue
             rear.setNext(front);
         }
     }
+    public void process()
+    {
 
+    }
 }
